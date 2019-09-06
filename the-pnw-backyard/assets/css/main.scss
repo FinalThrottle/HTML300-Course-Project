@@ -1,0 +1,137 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+// Stylizations to add to the website - fonts, and font colors. 
+$title: 'Shadows Into Light', cursive;
+$standard: 'Quicksand', sans-serif;
+$electricblue: #34adf6;
+$smoke: #575772;
+
+
+// H1 size is based on having the browser at full-width - this has influenced the title. 
+h1 {
+  font-size: 600%;
+  font-family: $title;
+  color: $electricblue;
+}
+
+h3 {
+  font-family: $standard;
+  color: $electricblue;
+  font-size: 150%;
+}
+
+h4 {
+  font-family: $standard;
+  color: $electricblue;
+  font-size: 150%;
+}
+
+.nav-link {
+  color: $electricblue;
+}
+
+.nav-link:link {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: goldenrod;
+  -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.5);
+        transition-duration: 0.5s;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100px;
+  justify-content: space-around;
+}
+
+p {
+  font-family: $standard;
+  color: $smoke;
+}
+
+.meh {
+  font-size: 30px;
+  color: $smoke;
+  text-align: center;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Create two equal columns that floats next to each other
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px
+}
+
+// Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+// Stylizations to the pictures in the "Hikes" section. 
+.gallery {
+  height: 300px;
+  width: 300px;
+}
+
+// Ensures that the pictures are spaced appropriately next to each other. 
+.hikes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.subheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.img {
+  height: 300px;
+  width: 500px;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
